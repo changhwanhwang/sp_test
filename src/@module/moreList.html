@@ -1,0 +1,75 @@
+@@include('../@common/head-common.html')
+
+<div class="module-more-list">
+  <section class="sec-review">
+    <h3 class="p-title">이용 중인 분들의<br />솔직한 후기를 확인해보세요</h3>
+    <div class="review-content">
+      <h4 class="review-all">후기 12</h4>
+      <ul class="review-list">
+        <li class="grid-sizer"></li>
+        <li class="gutter-sizer"></li>
+        <li class="review-item icon-quotation">
+          <p class="item-text">그리너리한 인테리어 분위기가 편안하고 멋져요. 호텔이랑 같은 건 물을 써서 어깨가 으쓱 합니다..</p>
+        </li>
+        <li class="review-item icon-quotation">
+          <p class="item-text">코엑스 센터필드, 파르나스몰 대표 맛집도 앱 예약으로 기다림 없고, 점심에는 맛집 다니면서 밥심으로 일해요🍚</p>
+        </li>
+        <li class="review-item icon-quotation">
+          <p class="item-text">백색소음이 있어야 일이 잘 되는 편인데요. 오픈형 테이블이 있어서 집중도 200%! 잘 활용하고 있어요 :D</p>
+        </li>
+        <li class="review-item icon-quotation">
+          <p class="item-text">이렇게 편리한 공유오피스는 처음이에요! 코엑스랑 바로 이어져있어서 날씨 영향 없이 출퇴근 할 수 있어서 진짜~ 편리해요!!!!</p>
+        </li>
+        <li class="review-item icon-quotation">
+          <p class="item-text">코엑스 근처 다른 지점도 이용해봤는데요, 미팅룸이 압도적으로 많아서 예약도 수월합니다.</p>
+        </li>
+        <li class="review-item icon-quotation">
+          <p class="item-text">한 달에 한 번 고객사 대상 세미나를 여는데요. 따로 대관할 필요없이 세미나룸을 이용하고 있어요. 지인들에게 입소문 내는 중,,</p>
+        </li>
+        <li class="review-item icon-quotation">
+          <p class="item-text">내부 에스컬레이터 있어서 층간 이동하는데 딱 10초! 라운지가 꽤 넓은편이지만, 불편함이 1도 없어요</p>
+        </li>
+        <li class="review-item icon-quotation">
+          <p class="item-text">직원들한테 청소 눈치 주는게 불편했는데, 여기에선 모든 청소를 다해주셔서 마음이 편합니다 ㅎ.ㅎ</p>
+        </li>
+        <li class="review-item icon-quotation">
+          <p class="item-text">공유오피스에 대한 편견이 깨졌습니다. 사무실 내부 공간도 꽤 넓고 밝은 분위기 집중 근무 가능합니다. 인원 더 많아지면 단독층으로 이사가고 싶네요.</p>
+        </li>
+        <li class="review-item icon-quotation">
+          <p class="item-text">공용공간도 많고, 방문하는 분들께 맛있는 커피도 무료로 대접할 수 있어서 좋습니다. 쏘 스윗,,,,</p>
+        </li>
+        <li class="review-item icon-quotation">
+          <p class="item-text">미팅룸이 많아서 급한 회의도 앱으로 예약만 하면 바로 진행할 수 있습니다.</p>
+        </li>
+        <li class="review-item icon-quotation">
+          <p class="item-text">전에 쓰던 사무실 에어컨이 항상 말썽이었는데, 지금은 24시간 냉난방이라 쾌적하게 이용하고 있어요</p>
+        </li>
+      </ul>
+      <button type="button" title="리스트 더보기" class="btn-more icon-arrow">더보기</button>
+    </div>
+  </section>
+</div>
+
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+<script>
+  $(function () {
+    function masonry() {
+      $(".sec-review .review-list").masonry({
+        itemSelector: ".sec-review .review-item",
+        columnWidth: ".grid-sizer",
+        gutter: ".gutter-sizer",
+        percentPosition: true,
+      });
+    }
+    masonry();
+
+    var btnListMore = $(".btn-more");
+    btnListMore.click(function () {
+      $(".review-item").css("display", "block");
+      $(".review-list").addClass("is-open");
+      $(".btn-more").hide();
+      masonry();
+    });
+  });
+</script>

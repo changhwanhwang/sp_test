@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M9L2RCD4');</script>
+    <!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
+  
+<meta name="description" content="강남, 강북, 분당 수도권 어디든 당신에게 딱 맞는 스파크플러스 오피스 지점을 찾아보세요" />
+    <meta property="og:title" content="지점 찾기 - 스파크플러스" />
+    <meta property="og:description" content="강남, 강북, 분당 수도권 어디든 당신에게 딱 맞는 스파크플러스 오피스 지점을 찾아보세요" />
+    <meta property="og:url" content="https://sparkplus.kr/place" />
+    <meta property="og:image" content="http://sparkplus.kr/1340IxRt4236x30xE/assets/img/common/meta-images/search.jpg" />
+    <title>지점 찾기 - 스파크플러스</title>
+    @@include('../@common/head-common.html')
+  </head>
+  <body>
+    @@include('../@common/google-tag.html') @@include('../@common/header.html')
+    <main id="sp-wrap" class="p-search">
+      <div class="inner">
+        <section class="sec-map">
+          <div id="map-container" class="map-container"></div>
+          <div id="custom-zoom-controls" class="custom-zoom-controls" style="position: absolute; z-index: 1000">
+            <div id="custom-zoom-in" class="custom-zoom-in img-box" style="cursor: pointer">
+              <img src="../../assets/img/place/map/zoom_in.svg" alt="확대" />
+            </div>
+            <div id="custom-zoom-out" class="custom-zoom-out img-box" style="cursor: pointer">
+              <img src="../../assets/img/place/map/zoom_out.svg" alt="축소" />
+            </div>
+          </div>
+        </section>
+        <section class="sec-panel">@@include('./panel.html')</section>
+      </div>
+    </main>
+    <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=35f1v7jvis"></script>
+    <script type="text/javascript" src="../../assets/js/place/cluster.js"></script>
+    <script src="../../assets/js/place/data-bind.js" type="module"></script>
+    <script src="../../assets/js/@module/btn-heart.js"></script>
+    <script src="../../assets/js/@module/tab.js"></script>
+    <script src="../../assets/js/place/search.js" defer></script>
+  </body>
+</html>

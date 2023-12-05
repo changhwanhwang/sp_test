@@ -1,0 +1,196 @@
+@@include('../@common/head-common.html')
+
+<div id="sp-wrap" class="video-test">
+  <button class="safari">사파리이시네요 클릭해주세요</button>
+  <div class="main">
+    <div class="video-box" style="width: 60rem; height: 60rem; margin: 0 auto;">
+      <div id="video00" data-vimeo-url="https://player.vimeo.com/video/481045341" style="width: 100%; height: 100%;"></div>
+    </div>
+  </div>
+  <div class="demo">
+    <div style="background-color: antiquewhite; width: 100%; height: 40rem;"></div>
+  </div>
+  <div class="demo">
+    <div class="video-box" style="width: 60rem; height: 60rem; margin: 0 auto;">
+      <div id="video01" class="video" data-vimeo-url="https://player.vimeo.com/video/481045341" style="width: 100%; height: 100%;"></div>
+    </div>
+  </div>
+  <div class="demo">
+    <div style="background-color: antiquewhite; width: 100%; height: 400rem;"></div>
+  </div>
+  <div class="demo">
+    <div style="background-color: antiquewhite; width: 100%; height: 400rem;"></div>
+    <div class="video-box" style="width: 60rem; height: 60rem; margin: 0 auto;">
+      <div id="video02" class="video" data-vimeo-url="https://player.vimeo.com/video/481045341" style="width: 100%; height: 100%;"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(function(){
+
+    // 크롬에서는 자동재생이 동작이 잘 되지만 사파리에서는 사용자상호작용이 필요함
+    // 해당 이슈 해결을 위해서는 사용자의 클릭 이벤트를 유도해야함
+    // 모바일에서는 문제없음
+
+
+
+      // function vimeo ($element){
+      //   var scrollTop         = $(window).scrollTop(),
+      //       $videoKvBox       = $("#video00"),
+      //       $videoKvHas       = $videoKvBox.length,
+      //       videoID           = $element.attr('id'),
+      //       isInVideoSection  = false,
+      //       videoPlayer       = new Vimeo.Player(videoID,{autoplay: true, background: true, loop: true, muted: true, responsive: true,});
+
+      //   if ($(window).width() >= 768) {
+      //     var agent = navigator.userAgent.toLowerCase();
+
+      //     if (agent.indexOf("safari") != -1 && agent.indexOf("chrome") == -1) {
+      //       $(".safari").show();
+      //       $(".safari").on('click', function () {
+      //           $(".safari").remove();
+      //           if($videoKvHas){
+      //             videoKvPlayer.play();
+      //           }
+      //         });
+      //       }
+      //       else{
+      //         $(".safari").hide();
+      //       }
+      //   }
+      //   else{
+      //     $(".safari").hide();
+      //   }
+            
+      //   if($videoKvHas){
+      //     videoKvPlayer = new Vimeo.Player('video00',{autoplay: true, background: true, loop: true, muted: true, responsive: true,});
+      //     videoKvPlayer.play();
+      //     $(window).on('scroll',function(){
+      //       const videoKvHeight = $videoKvBox.offset().top + $videoKvBox.height();
+
+      //       if(scrollTop <= videoKvHeight){
+      //         videoKvPlayer.play();
+      //         console.log('메인재생');
+      //       }
+      //       else{
+      //         videoKvPlayer.pause();
+      //         console.log('메인멈춤');
+      //       }
+      //     }); 
+      //   }
+        
+      //   $(window).on('scroll',function(){
+      //     var sectionTop    = $element.offset().top,
+      //         sectionBottom = sectionTop + $element.outerHeight();
+    
+      //     if (scrollTop + 300 >= sectionTop && scrollTop < sectionBottom) {
+      //       if (!isInVideoSection) {
+      //         videoPlayer.play();
+      //         isInVideoSection = true;
+      //         console.log('영상재생');
+      //       }
+      //     }
+      //     else {
+      //       if (isInVideoSection) {
+      //         videoPlayer.pause();
+      //         isInVideoSection = false;
+      //         console.log('영상멍춤');
+      //       }
+      //     }
+      //   });
+      // }
+      // $('#sp-wrap .video').each(function () {
+      //   // vimeo($(this));
+      // });
+
+
+
+      // function vimeo (){
+      //   const $videoKvBox = $("#video00");
+      //   const $videoKvHas = $videoKvBox.length;
+
+      //   if ($(window).width() >= 768) {
+      //     var agent = navigator.userAgent.toLowerCase();
+
+      //     if (agent.indexOf("safari") != -1 && agent.indexOf("chrome") == -1) {
+      //       $(".safari").show();
+      //       $(".safari").on('click', function () {
+      //           $(".safari").remove();
+      //           if($videoKvHas){
+      //             videoKvPlayer.play();
+      //           }
+      //         });
+      //       }
+      //       else{
+      //         $(".safari").hide();
+      //       }
+      //   }
+      //   else{
+      //     $(".safari").hide();
+      //   }
+            
+      //   if($videoKvHas){
+      //     videoKvPlayer = new Vimeo.Player('video00',{autoplay: true, background: true, loop: true, muted: true, responsive: true,});
+      //     videoKvPlayer.play();
+      //     $(window).on('scroll',function(){
+      //       const scrollTop = $(window).scrollTop();
+      //       const videoKvHeight = $videoKvBox.offset().top + $videoKvBox.height();
+
+      //       console.log(scrollTop);
+      //       console.log(videoKvHeight);
+
+      //       if(scrollTop <= videoKvHeight){
+      //         videoKvPlayer.play();
+      //         console.log('메인재생');
+      //       }
+      //       else{
+      //         videoKvPlayer.pause();
+      //         console.log('메인멈춤');
+      //       }
+      //     }); 
+      //   }
+        
+
+      //   $(window).on('scroll', function() {
+      //     // .video 클래스 요소를 순회하며 화면에 보이는 요소를 찾습니다.
+      //     $('.video').each(function() {
+      //       const element = $(this);
+      //       const videoId = element.attr('id');
+      //       const videoPlayer = new Vimeo.Player(videoId,{autoplay: true, background: true, loop: true, muted: true, responsive: true,});
+
+      //       // 요소의 위치와 높이를 가져옵니다.
+      //       const elementTop = element.offset().top;
+      //       const elementBottom = elementTop + element.outerHeight();
+
+      //       // 현재 스크롤 위치를 가져옵니다.
+      //       const viewportTop = $(window).scrollTop();
+      //       const viewportBottom = viewportTop + $(window).height();
+
+      //       // 요소가 화면에 보이는지 확인합니다.
+      //       if (elementBottom > viewportTop && elementTop < viewportBottom) {
+      //         console.log('화면에 보이는 .video 클래스 요소의 id 값: ' + videoId);
+      //         // 화면에 보이는 경우 요소의 id 값을 가져와 출력합니다.
+      //         // const videoId = element.attr('id');
+      //         videoPlayer.play();
+      //         console.log('영상재생');
+      //       }
+      //       else{
+      //         videoPlayer.pause();
+      //         console.log('영상멍춤');
+      //       }
+      //     });
+      //   });
+
+      // }
+      
+      vimeo();
+
+  
+  
+  
+    });
+
+
+
+</script>

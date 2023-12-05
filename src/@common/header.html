@@ -1,0 +1,38 @@
+<!-- 헤더 s -->
+<header class="header">
+  <div class="header__inner">
+    <div class="header__top">
+      <h1 class="header__logo">
+        <a href="../" class="logo">
+          <span class="sr-only">SPARKPLUS</span>
+        </a>
+      </h1>
+    </div>
+    <nav class="header__gnb">
+      <button class="header__gnb--icon js-menu-toggle mo-only"><span class="sr-only">메뉴 열기</span></button>
+      <ul class="header__list js-toggle">
+        <li class="header__item">
+          <a href="../place/" class="header__item--link track_b"><span class="sr-only">지점찾기 페이지로 이동하기</span>지점찾기</a>
+        </li>
+        <li class="header__item">
+          <a href="../office/" class="header__item--link track_b"><span class="sr-only">오피스 페이지로 이동하기</span>오피스</a>
+        </li>
+        <li class="header__item">
+          <a href="../lounge/" class="header__item--link track_spl_b"><span class="sr-only">라운지 페이지로 이동하기</span>라운지</a>
+        </li>
+        <li class="header__item">
+          <a href="../promotion/" class="header__item--link track_b"><span class="sr-only">프로모션 페이지로 이동하기</span>프로모션</a>
+        </li>
+        <li class="header__item">
+          <button type="button" class="btn-inquiry js-modal--inquiry track_a" onclick="popupOpen('form')"><span class="sr-only">문의하기 팝업 띄우기</span>문의하기</button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- 헤더 e-->
+
+<!-- 팝업 s -->
+@@include('../@module/popup.html')
+<!-- 팝업 e -->

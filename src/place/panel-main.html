@@ -1,0 +1,56 @@
+<div class="panel-main" data-panel-main="">
+  <button type="button" class="btn-panel-toggle icon-arrow-right">
+    <span class="sr-only">패널 버튼</span>
+  </button>
+  <button type="button" class="btn-panel-map mo-only on">지도</button>
+  <button type="button" class="btn-panel-list mo-only">목록</button>
+
+  <div class="main-title">
+    <a href="javascript:;" class="title-box track_c is-active" data-panel-title="office">
+      <h2 class="text">오피스</h2>
+      <p class="count" data-panel-count="office"></p>
+    </a>
+    <a href="javascript:;" class="title-box track_spl_c" data-panel-title="lounge">
+      <h2 class="text">라운지</h2>
+      <p class="count" data-panel-count="lounge"></p>
+    </a>
+  </div>
+
+  <!-- 추천패널 pc s -->
+  <div class="panel-recommend pc-only">@@include('./panel-recom.html')</div>
+  <!-- 추천패널 pc e -->
+
+  <div class="panel-filter" data-panel-filter="">
+    <a class="zone-select icon-arrow" href="javascript:;">지역 선택</a>
+    <div class="zone-content popup">
+      <div class="popup-title category-popup-title mo-only">
+        <h2>지역 선택</h2>
+        <button class="btn-close"><span class="sr-only">닫기</span></button>
+      </div>
+      <div class="category">
+        <h3 class="title">강남</h3>
+        <div class="content" data-panel-category="강남"></div>
+      </div>
+      <div class="category">
+        <h3 class="title">강북</h3>
+        <div class="content" data-panel-category="강북"></div>
+      </div>
+      <div class="category category_kyonggi">
+        <h3 class="title">경기</h3>
+        <div class="content" data-panel-category="경기"></div>
+      </div>
+      <div class="category category_etc">
+        <h3 class="title">경기・기타</h3>
+        <div class="content" data-panel-category="경기・기타"></div>
+      </div>
+    </div>
+    <p class="number">총 <span class="number-count" data-panel-total></span>개</p>
+  </div>
+
+  <div class="panel-list-wrap">
+    <!-- 추천패널 mo s -->
+    <div class="panel-recommend mo-only">@@include('./panel-recom.html')</div>
+    <!-- 추천패널 mo e -->
+    <ul class="main-list" data-panel-list=""></ul>
+  </div>
+</div>

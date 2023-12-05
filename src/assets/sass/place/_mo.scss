@@ -1,0 +1,187 @@
+.header.is-sub-open {
+  z-index: -1;
+}
+
+.p-search {
+  & > .inner {
+    padding-top: 5rem;
+  }
+
+  // 지도
+  .sec-map {
+    .current {
+      &-location-button {
+        right: calc(100% - -32rem);
+        top: 6.3rem;
+        width: 4rem;
+        height: 4rem;
+        box-shadow: 0.2rem 0.2rem 0.6rem 0 rgba(0, 0, 0, 0.2);
+        background: url("../../img/place/map/current_btn.svg") no-repeat center;
+        background-size: 4rem 4rem;
+      }
+    }
+    .custom-zoom {
+      &-controls {
+        display: none;
+      }
+    }
+  }
+
+  // 전체 패널
+  .sec-panel {
+    position: fixed;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: calc(100% - 5rem);
+    border-left: 0;
+    z-index: 100;
+    // &.ismo-open-depth1 {
+    //   top: calc(100% - 35rem);
+    //   .panel-main {
+    //     .panel-list-wrap {
+    //       height: 22.6rem;
+    //     }
+    //   }
+    // }
+    &.ismo-open-depth2 {
+      top: 9.7rem;
+      .panel-main {
+        .main-title {
+          .title-box {
+            &.is-active {
+              color: #000;
+              border-bottom: 2px solid #000;
+              background-color: #fff;
+            }
+          }
+        }
+        .panel-list-wrap {
+          height: calc(100% - 9.5rem);
+        }
+      }
+      .btn-panel {
+        &-list {
+          top: 300%;
+        }
+      }
+    }
+    &.is-sub-open {
+      .panel-sub {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        border-left: none;
+        z-index: 9999;
+        padding-bottom: 6.4rem;
+      }
+    }
+  }
+  // 전체 패널 버튼
+  .btn-panel {
+    &-toggle {
+      display: none;
+    }
+    &-map {
+      display: none;
+      position: fixed;
+      right: 2rem;
+      top: calc(100% - 6.5rem);
+      height: 4.4rem;
+      padding: 1.3rem 3.8rem 1.3rem 1.6rem;
+      color: #fff;
+      font-size: 1.4rem;
+      background-color: #444;
+      border-radius: 50rem;
+      z-index: 3;
+      &::before {
+        position: absolute;
+        content: "";
+        right: 1.6rem;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1.8rem;
+        height: 1.8rem;
+        background: url("../../../assets/img/place/panel_main/icon-map.svg") no-repeat center/cover;
+      }
+      &.on {
+        display: block;
+      }
+    }
+    &-list {
+      display: block;
+      position: fixed;
+      right: 2rem;
+      top: calc(100% - 6.5rem);
+      height: 4.4rem;
+      padding: 1.3rem 3.8rem 1.3rem 1.6rem;
+      color: #fff;
+      font-size: 1.4rem;
+      background-color: #444;
+      border-radius: 50rem;
+      z-index: 10;
+      transition: all 0.3s;
+      &::before {
+        position: absolute;
+        content: "";
+        right: 1.6rem;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1.8rem;
+        height: 1.8rem;
+        background: url("../../../assets/img/place/panel_main/icon-list.svg") no-repeat center/cover;
+      }
+    }
+  }
+
+  // 패널 내 추천 섹션
+  .panel-recommend {
+    padding: 2.4rem 0 2rem 2rem;
+    &.pc-only {
+      display: none;
+    }
+    .recommend-title {
+      p {
+        font-size: 1.6rem;
+      }
+      span {
+        margin-bottom: 0.6rem;
+      }
+    }
+  }
+
+  // 카피얼럿
+  .alert {
+    &-box {
+      bottom: 12.2rem;
+      &.js-active.address {
+        right: auto;
+      }
+    }
+  }
+
+  // 모바일 팝업 형태(기능)
+  .popup {
+    .popup-title {
+      display: block;
+      position: relative;
+      width: 100%;
+      padding: 1.6rem 0;
+      border-bottom: 0.1rem solid #eee;
+      h2 {
+        text-align: center;
+        font-size: 1.8rem;
+        color: #000;
+      }
+    }
+    .btn-close {
+      position: absolute;
+      top: 1.3rem;
+      right: 1.5rem;
+      width: 2.4rem;
+      height: 2.4rem;
+      overflow: hidden;
+    }
+  }
+}

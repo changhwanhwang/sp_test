@@ -1,0 +1,8 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="38" cy="11" r="3" stroke="black" stroke-width="2"/>
+<circle cx="2" cy="2" r="3" transform="matrix(-1 0 0 1 12 9)" stroke="black" stroke-width="2"/>
+<path d="M35 26V21.5C35 19.567 36.567 18 38.5 18V18C40.433 18 42 19.567 42 21.5V30H31V41" stroke="black" stroke-width="2"/>
+<path d="M13 26V21.5C13 19.567 11.433 18 9.5 18V18C7.567 18 6 19.567 6 21.5V30H17V41" stroke="black" stroke-width="2"/>
+<path d="M31 25H17" stroke="black" stroke-width="2"/>
+<path d="M24 26V41" stroke="black" stroke-width="2"/>
+</svg>

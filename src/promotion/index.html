@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M9L2RCD4');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
+    
+    <meta name="description" content="할인 오피스가 필요한 순간, 추천 지점을 확인하세요. 매월 새로운 스파크플러스 프로모션을 만나보세요" />
+    <meta property="og:title" content="프로모션 - 스파크플러스" />
+    <meta property="og:description" content="할인 오피스가 필요한 순간, 추천 지점을 확인하세요. 매월 새로운 스파크플러스 프로모션을 만나보세요" />
+    <meta property="og:url" content="https://sparkplus.kr/promotion" />
+    <meta property="og:image" content="http://sparkplus.kr/1340IxRt4236x30xE/assets/img/common/meta-images/promotion.jpg" />
+    <title>프로모션 - 스파크플러스</title>
+    @@include('../@common/head-common.html')
+  </head>
+  <body>
+    @@include('../@common/google-tag.html') @@include('../@common/header.html')
+    <main id="sp-wrap" class="p-promotion">
+      <section class="sec-main-title">
+        <h2 class="main">
+          <span class="mon">11</span>월 프로모션<span class="pc-only">오피스가 필요한 순간,<br />추천 지점을 확인해보세요</span>
+        </h2>
+        <p class="main-text pc-only">매월 새로운 프로모션을 만나보세요</p>
+      </section>
+      <section class="sec-scroll">
+        <ul class="list">
+          <li class="item item-color">
+            <a href="javascript:;" class="link" onclick="popupOpen('form')">
+              <span class="sr-only">호버시 민트로 컬러 변경-> 클릭시 문의하기 팝업</span>
+              <div class="text-box">
+                <h3 class="main">할인 오피스가 궁금하세요?</h3>
+                <p class="sub sub-another">15초면 문의할 수 있어요</p>
+                <!-- <p class="count-down"></p> -->
+              </div>
+              <div class="info">
+                <div class="img-box img-box-icon"><img src="../assets/img/promotion/sec_scroll_icon.svg" alt="" /></div>
+              </div>
+            </a>
+          </li>
+          <li class="item item-img">
+            <a href="../place/office/coex/" class="link">
+              <span class="sr-only">해당 지점 상세페이지로 이동</span>
+              <div class="img-box img-box-bg"><img src="../assets/img/promotion/sec_scroll_img-coex.jpg" alt="프로모션_코엑스점" /></div>
+              <div class="text-box">
+                <h3 class="main">마음을 담아 드려요<br />코엑스점</h3>
+                <p class="sub">UP TO 35%</p>
+              </div>
+              <div class="info">30-100인실</div>
+            </a>
+          </li>
+          <li class="item item-img">
+            <a href="../place/office/gangnam3/" class="link">
+              <span class="sr-only">해당 지점 상세페이지로 이동</span>
+              <div class="img-box"><img src="../assets/img/promotion/sec_scroll_img-gangnam3.jpg" alt="프로모션_강남3호점" /></div>
+              <div class="text-box">
+                <h3 class="main">
+                  비즈니스의 시작<br />
+                  강남3호점
+                </h3>
+                <p class="sub">UP TO 40%</p>
+              </div>
+              <div class="info">183인실</div>
+            </a>
+          </li>
+          <li class="item item-img">
+            <a href="../place/office/seongsu2/" class="link">
+              <span class="sr-only">해당 지점 상세페이지로 이동</span>
+              <div class="img-box"><img src="../assets/img/promotion/sec_scroll_img-seongsu2.jpg" alt="프로모션_성수2호점" /></div>
+              <div class="text-box">
+                <h3 class="main">뚝섬역 도보 30초 <br />성수2호점</h3>
+                <p class="sub">UP TO 40%</p>
+              </div>
+              <div class="info">196인실</div>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <div class="scroll-button-box inquire-box show">@@include('../@module/scroll-inquire.html')</div>
+    </main>
+
+    <script src="../assets/js/@module/scrolltop.js"></script>
+    <script src="../assets/js/promotion/promotion.js"></script>
+    @@include('../@common/footer.html')
+  </body>
+</html>

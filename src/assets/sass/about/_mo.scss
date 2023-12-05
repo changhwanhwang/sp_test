@@ -1,0 +1,232 @@
+.p-about {
+  // 공통 이너
+  .inner {
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+  //공통 박스
+  .p-content-box {
+    margin-bottom: 4rem;
+    padding-left: 2rem;
+  }
+  .sec-rolling {
+    .p-content-box {
+      margin-bottom: 6rem;
+    }
+  }
+  // 공통타이틀
+  .p-title-center {
+    text-align: left;
+    font-size: 3rem;
+    line-height: 4.2rem;
+  }
+
+  .p-title-desc {
+    // margin-bottom: 6rem;
+    font-size: 1.7rem;
+    line-height: 2.8rem;
+    text-align: left;
+  }
+
+  // 섹션 마진,패딩 값
+  section {
+    &.sec-space {
+      padding: 0 0 8rem 0;
+    }
+    &.sec-history {
+      padding: 0 0 10rem 0;
+    }
+    &.sec-map {
+      padding: 10rem 0 0 0;
+    }
+    &.sec-invest {
+      padding: 10rem 0;
+    }
+    &.sec-rolling {
+      padding: 0 0 4rem 0;
+    }
+  }
+  // sec-kv
+  .sec-kv {
+    .img-box {
+      position: relative;
+    }
+    .text-box {
+      width: 30.5rem;
+      top: calc(50% - 2.8rem);
+      .kv-title {
+        font-size: 3.6rem;
+        line-height: 4.6rem;
+      }
+    }
+  }
+  // sec-space
+  .sec-space {
+    .p-title {
+      margin-bottom: 4rem;
+      font-size: 4.4rem;
+      font-weight: 700;
+      line-height: 6rem;
+      text-align: left;
+    }
+    .scroll-box {
+      position: relative;
+      .swiper-wrapper {
+        .swiper-slide {
+          display: block;
+          width: 33.5rem;
+          height: 54.7rem;
+          // margin-right: 1rem;
+          .video-box {
+            width: 33.5rem;
+            height: 33.5rem;
+            .videoSlide {
+              border-radius: 1.6rem 1.6rem 0 0;
+            }
+          }
+          .text-box {
+            width: 33.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 21.2rem;
+            background-color: #fff;
+            border-radius: 0 0 1.6rem 1.6rem;
+            padding: 0;
+            text-align: center;
+            .space-title {
+              font-size: 2.2rem;
+              margin-bottom: 1.4rem;
+            }
+            .space-desc {
+              font-size: 1.5rem;
+              line-height: 2.5rem;
+              span.pc-only {
+                display: none;
+              }
+            }
+            &::after{
+              height: 33.5rem;
+              left: 0; top: -33.5rem;
+              transform: none;
+            }
+          }
+        }
+      }
+      .swiper-horizontal > .swiper-pagination-bullets,
+      .swiper-pagination-bullets.swiper-pagination-horizontal,
+      .swiper-pagination-custom,
+      .swiper-pagination-fraction {
+        bottom: 0;
+      }
+      .swiper-pagination-bullet-active {
+        background-color: #fff;
+        opacity: 1 !important;
+      }
+      .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+      .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        background-color: #fff;
+        opacity: 0.5;
+        width: 1rem;
+        height: 1rem;
+      }
+    }
+  }
+  .sec-history {
+    overflow: hidden;
+    .history-list {
+      margin-left: 2rem;
+      padding-left: 0;
+      .history-item {
+        line-height: 2.6rem;
+        margin-bottom: 2.4rem;
+        .h-year {
+          min-width: 5rem;
+          margin-right: 2rem;
+          line-height: 2.4rem;
+          &::after {
+            display: none;
+          }
+        }
+        .h-item {
+          .h-list {
+            display: flex;
+            .name-box {
+              font-size: 1.4rem;
+              .h-desc {
+                font-size: 1.2rem;
+                margin-top: 0rem;
+              }
+              .h-name {
+                line-height: 2.4rem;
+              }
+            }
+            .h-text {
+              line-height: 2.4rem;
+            }
+          }
+        }
+        .h-item-more {
+          .h-list {
+            margin-bottom: 1rem;
+            &:nth-last-child(1) {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+      .history-item:first-child .h-year::before {
+        display: none;
+      }
+    }
+  }
+  .sec-map {
+    background: url("../../img/about/sec-map_mo.jpg") no-repeat;
+    background-size: 100% 100%;
+    .map-list {
+      margin-left: 2rem;
+      width: 37.2rem;
+      padding-bottom: 29.3rem;
+      .map-item {
+        color: #fff;
+        width: 17.3rem;
+        margin-bottom: 4rem;
+        .map-title {
+          font-size: 3.4rem;
+        }
+        .map-desc {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+  .sec-invest {
+    .inner {
+      max-width: 33.5rem;
+    }
+    .img-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 3.2rem 1.7rem;
+      gap: 4rem 0.8rem;
+      .img-box {
+        width: 9.5rem;
+      }
+    }
+  }
+  .sec-rolling {
+    .p-content-box {
+      padding-left: 0;
+    }
+    .p-title-center {
+      padding-left: 2rem;
+    }
+    .p-title-desc {
+      padding-left: 2rem;
+    }
+    .rollingbanner {
+      margin-top: 6rem;
+    }
+  }
+}

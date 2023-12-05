@@ -1,0 +1,224 @@
+@import "./_pc.scss";
+
+.p-detail .sec-poster .content-box .title-box {
+  // 강남점
+  &.gangnam-title-box {
+    top: 1rem;
+  }
+  // 분당3호점
+  &.bundang3-title-box {
+    top: 12rem;
+    padding-left: 3rem;
+    .title-main {
+      text-align: left;
+      color: #576383;
+    }
+  }
+  // 동대문점
+  &.dongdaemoon-title-box {
+    top: 42.7rem;
+    text-align: left;
+  }
+  // 삼성2호점
+  &.samsung2-title-box {
+    top: 33.3rem;
+    text-align: left;
+  }
+  // 역삼2호점
+  &.yeoksam2-title-box {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title-main {
+      text-align: left;
+      opacity: 0.6;
+    }
+  }
+  // 역삼3호점
+  &.yeoksam3-title-box {
+    top: 12.6rem;
+    text-align: left;
+    transform: translateX(9.7rem);
+  }
+  // 여의도점
+  &.yeouido-title-box {
+    top: 41.6rem;
+    .yeouido-title-main {
+      font-size: 5rem;
+    }
+  }
+  // 선릉3호점
+  &.seolleungthree-title-box {
+    top: 19.3rem;
+  }
+  // 잠실점
+  &.jamsil-title-box {
+    top: 39.9rem;
+  }
+  // 시청점
+  &.sichung-title-box {
+    top: 31.4rem;
+    .title-main {
+      text-align: right;
+    }
+  }
+  // 광화문점
+  &.gwanghwamun-title-box {
+    top: 13rem;
+    .gwanghwamun-title-main {
+      font-size: 5rem;
+    }
+  }
+  // 을지로점
+  &.euljiro-title-box {
+    top: 13rem;
+    padding-left: 7.4rem;
+  }
+  // 방배점
+  &.bangbae-title-box {
+    top: 21.5rem;
+    padding-left: 4.3rem;
+    .bangbae-title-main {
+      font-size: 5rem;
+    }
+  }
+  // 신논현점
+  &.sinnonhyeon-title-box {
+    top: 39.6rem;
+    padding-left: 1rem;
+    .sinnonhyeon-title-main {
+      font-size: 5rem;
+    }
+  }
+  // 홍대점
+  &.hongdae-title-box {
+    top: 18.9rem;
+    .hongdae-title-main {
+      font-size: 5rem;
+    }
+  }
+  // 홍대2호점
+  &.hongdaetwo-title-box {
+    top: 47.2rem;
+    .hongdaetwo-title-main {
+      font-size: 5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  @import "./_mo.scss";
+
+  .p-detail .sec-poster .content-box .title-box {
+    // 강남점
+    &.gangnam-title-box {
+      top: 1rem;
+    }
+    // 시청점
+    &.sichung-title-box {
+      top: 19.4rem;
+    }
+
+    // 광화문점
+    &.gwanghwamun-title-box {
+      top: 1rem;
+    }
+    // 분당3호점
+    &.bundang3-title-box {
+      top: 11.5rem;
+    }
+    // 동대문점
+    &.dongdaemoon-title-box {
+      top: 24.5rem;
+    }
+    // 삼성2호점
+    &.samsung2-title-box {
+      top: 20.5rem;
+      text-align: left;
+    }
+    // 역삼3호점
+    &.yeoksam3-title-box {
+      top: 12.6rem;
+      transform: none;
+      left: 22rem;
+    }
+    // 여의도점
+    &.yeouido-title-box {
+      top: 24.3rem;
+      .yeouido-title-main {
+        font-size: 3.4rem;
+      }
+    }
+    // 선릉점
+    &.seolleung-title-box {
+      top: 9.4rem;
+    }
+    // 선릉2호점
+    &.seolleungtwo-title-box {
+      top: 9.4rem;
+    }
+    // 선릉3호점
+    &.seolleungthree-title-box {
+      top: 9.4rem;
+    }
+    // 성수점
+    &.seongsu-title-box {
+      top: 9.4rem;
+    }
+    // 성수2호점
+    &.seongsutwo-title-box {
+      top: 9.4rem;
+    }
+    // 잠실점
+    &.jamsil-title-box {
+      top: 25.5rem;
+    }
+    // 광화문점
+    &.gwanghwamun-title-box {
+      top: 8.2rem;
+      .gwanghwamun-title-main {
+        font-size: 3.4rem;
+      }
+    }
+    // 을지로점
+    &.euljiro-title-box {
+      top: 8.2rem;
+      padding-left: 6.5rem;
+    }
+    // 을지로센터원점
+    &.euljiroCenter-title-box {
+      top: 9.4rem;
+    }
+    // 방배점
+    &.bangbae-title-box {
+      top: 13.6rem;
+      padding-left: 4.6rem;
+      .bangbae-title-main {
+        font-size: 3.4rem;
+      }
+    }
+    // 신논현점
+    &.sinnonhyeon-title-box {
+      top: 24rem;
+      padding-left: 2.5rem;
+      .sinnonhyeon-title-main {
+        font-size: 3.4rem;
+      }
+    }
+    // 홍대점
+    &.hongdae-title-box {
+      top: 11.5rem;
+      .hongdae-title-main {
+        font-size: 3.4rem;
+      }
+    }
+    // 홍대2호점
+    &.hongdaetwo-title-box {
+      top: 28.7rem;
+      .hongdaetwo-title-main {
+        font-size: 3.4rem;
+      }
+    }
+  }
+}

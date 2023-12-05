@@ -1,0 +1,65 @@
+@@include('../@common/head-common.html')
+
+<div class="module-slider">
+  <section class="sec-pre">
+    <div class="inner">
+      <h2 class="p-title" data-aos="fade-up" data-aos-delay="300">멀리 갈 일 없도록,<br />준비된 시설</h2>
+      <div class="scroll-box slide-box-pre">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <div class="img-box">
+              <img src="../../assets/img/office/pre-img01.png" alt="이미지" />
+            </div>
+            <p class="img-name">라운지</p>
+          </li>
+          <li class="swiper-slide">
+            <div class="img-box">
+              <img src="../../assets/img/office/pre-img02.png" alt="이미지" />
+            </div>
+            <p class="img-name">스튜디오</p>
+          </li>
+          <li class="swiper-slide">
+            <div class="img-box">
+              <img src="../../assets/img/office/pre-img03.png" alt="이미지" />
+            </div>
+            <p class="img-name">세미나룸</p>
+          </li>
+          <li class="swiper-slide">
+            <div class="img-box">
+              <img src="../../assets/img/office/pre-img04.png" alt="이미지" />
+            </div>
+            <p class="img-name">릴랙스룸</p>
+          </li>
+          <li class="swiper-slide">
+            <div class="img-box">
+              <img src="../../assets/img/office/pre-img05.png" alt="이미지" />
+            </div>
+            <p class="img-name">무인스토어</p>
+          </li>
+          <li class="swiper-slide">
+            <div class="img-box">
+              <img src="../../assets/img/office/pre-img06.png" alt="이미지" />
+            </div>
+            <p class="img-name">무인택배접수기</p>
+          </li>
+        </ul>
+        <div class="swiper-scrollbar"></div>
+      </div>
+      <p class="noti">*지점별 제공 시설 상이</p>
+    </div>
+  </section>
+</div>
+
+<script>
+  $(function () {
+    // pre slider
+    var swiperPre = new Swiper(".slide-box-pre", {
+      slidesPerView: "auto",
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: true,
+      },
+      spaceBetween: 4,
+    });
+  });
+</script>

@@ -1,0 +1,108 @@
+.p-search {
+  .panel-main {
+    width: 100%;
+    height: calc(100%);
+    border-left: 0;
+    .main-title {
+      position: fixed;
+      top: 5rem;
+      font-size: 1.6rem;
+      .title-box {
+        height: 5rem;
+        padding: 0;
+        margin: 0;
+        .text {
+          margin-right: 0.3rem;
+        }
+      }
+    }
+    .panel-filter {
+      border-top: none;
+      padding: 1.9rem 2rem;
+      .zone {
+        &-content {
+          display: none;
+          width: 100%;
+          height: 100vh;
+          overflow-x: auto;
+          left: 0;
+          top: 0;
+          border: none;
+          border-radius: 0;
+          padding: 0;
+
+          &.is-select {
+            display: block;
+            position: fixed;
+            height: 100%;
+            padding-bottom: 5rem;
+          }
+
+          .category {
+            padding-bottom: 0.8rem;
+            &:not(:last-child) {
+              margin-bottom: 0;
+              border-bottom: none;
+            }
+            .title {
+              font-size: 1.4rem;
+              background-color: #f2f4f5;
+              margin-bottom: 0;
+              padding: 1.2rem 2rem;
+            }
+            .content {
+              padding: 0.8rem 0;
+              .button-box {
+                justify-content: flex-start;
+                padding: 1.2rem 2rem;
+                margin: 0;
+                border: none;
+                border-radius: 0;
+                &.all {
+                  width: 100%;
+                }
+                &:not(.all) {
+                  width: calc((100% - 0.8rem) / 2);
+                }
+                p {
+                  font-size: 1.5rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .panel-list-wrap {
+      height: 73.4vh;
+      .main-list {
+        padding-bottom: 10rem;
+        .main-item {
+          padding: 1.6rem 2rem;
+          .item-content {
+            .img-box {
+              width: 7.2rem;
+              height: 7.2rem;
+            }
+            .text-box {
+              padding: 1.25rem 1.6rem;
+              .title {
+                font-size: 1.7rem;
+                font-weight: 600;
+              }
+              .address-box {
+                .address-text {
+                  font-size: 1.2rem;
+                  white-space: nowrap;
+                }
+                .tooltip {
+                  left: -8rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

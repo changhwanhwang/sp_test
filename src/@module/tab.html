@@ -1,0 +1,120 @@
+@@include('../@common/head-common.html')
+<!-- 
+
+  module Tab 사용법
+
+  **기본 구조**
+
+  tab title에 data-module-tab-title=" 본인탭이름 "
+  tab content에 data-module-tab-content=" 본인탭이름 "
+
+  class="js-active"  -> def 상태
+
+  탭의 가장 첫번째 요소가 display block 상태가 됩니다
+
+  title js active 의 경우는 타이틀을 클릭했을때 style을 작성할 수 있도록 생성된 class
+  content js active 의 경우는 컨텐츠의 display="block" 의 상태
+
+
+  예시)
+ -->
+
+ <!-- 잘못된 구조 -->
+ <div data-module-tab-title="exNo">
+  <a href="">탭타이틀1</a>
+  <a href="">탭타이틀2</a>
+  <p>이렇게 되면 여기도 탭타이틀로 들어가게 됩니다</p>
+ </div>
+ <div data-module-tab-content="exNo">
+  <div>탭컨텐츠1</div>
+  <div>탭컨텐츠2</div>
+  <p>여기도 동일하게 탭컨텐츠로 들어가게 됩니다</p>
+ </div>
+
+<!-- 탭이름 ex -->
+<div data-module-tab-title="ex">
+  <a href="javascript:;">탭 title number 1</a>
+  <a href="javascript:;">탭 title number 2</a>
+</div>
+<div data-module-tab-content="ex">
+  <div>
+    <p>탭 content number 1</p>
+  </div>
+  <div>
+    <p>탭 content number 2</p>
+  </div>
+</div>
+
+<!-- 탭이름 ex2 -->
+<div data-module-tab-title="ex2">
+  <a href="javascript:;">탭 title number 1</a>
+  <a href="javascript:;">탭 title number 2</a>
+</div>
+<div data-module-tab-content="ex2">
+  <div>
+    <p>탭 content number 1</p>
+  </div>
+  <div>
+    <p>탭 content number 2</p>
+  </div>
+</div>
+
+<!-- 탭이름 ex3,ex4 (탭 중첩) -->
+<div data-module-tab-title="ex3">
+  <a href="javascript:;">중첩탭 depth1 - 1</a>
+  <a href="javascript:;">중첩탭 depth1 - 2</a>
+</div>
+<div data-module-tab-content="ex3">
+  <div>
+    <p>중첩탭 depth1 - 컨텐츠1</p>
+    <div data-module-tab-title="ex4">
+      <a href="javascript:;">중첩탭 depth2 - 1</a>
+      <a href="javascript:;">중첩탭 depth2 - 2</a>
+    </div>
+    <div data-module-tab-content="ex4">
+      <div>중첩탭 depth2 - 컨텐츠1</div>
+      <div>중첩탭 depth2 - 컨텐츠2</div>
+    </div>
+  </div>
+  <div>
+    <p>중첩탭 depth1 - 컨텐츠2</p>
+  </div>
+</div>
+
+<!-- 탭이름 ex5 (떨어진탭)-->
+<div>
+  <p>첫번째 섹션</p>
+  <div data-module-tab-title="ex5">
+    <a href="javascript:;" class="js-active">탭타이틀 1</a>
+    <a href="javascript:;">탭타이틀 2</a>
+  </div>
+</div>
+
+<div>
+  <p>두번째 섹션</p>
+  <div data-module-tab-content="ex5">
+    <div class="js-active">
+      <p>타이틀이랑 컨텐츠가 같이 묶여있지않아도</p>
+    </div>
+    <div>
+      <p>이름만 같으면 동작합니다</p>
+    </div>
+  </div>
+</div>
+
+<script src="../../assets/js/@module/tab.js" defer></script>
+
+<script>
+  $(function(){
+
+    // 사용법
+    // moduleTab( data-module-tab=" 본인 탭 네임 " );
+    moduleTab('exNo');
+    moduleTab('ex');
+    moduleTab('ex2');
+    moduleTab('ex3');
+    moduleTab('ex4');
+    moduleTab('ex5');
+
+  });
+</script>

@@ -1,0 +1,39 @@
+.sp-guide{
+
+  header{
+    .menu{
+      position: absolute;
+      left: 1rem; top: 2rem;
+      .icon-close{
+        display: none;
+      }
+    }  
+  }
+  .nav{
+    display: none;
+    width: 25rem;
+    &__title{
+      margin: 1rem 0;
+      font-size: 2.8rem;
+    }
+    &__sub-item{
+      font-size: 2.5rem;
+    }
+  }
+  .guide-container{
+    padding-left: 0;
+    &__title{
+      font-size: 2.8rem;
+    }
+    &__sub-title{
+      font-size: 2.5rem;
+      span{
+        font-size: 2.2rem;
+      }
+    }
+    &__item{
+      font-size: 2.2rem;
+    }
+  }
+  
+}

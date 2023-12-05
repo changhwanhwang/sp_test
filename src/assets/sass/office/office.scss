@@ -1,0 +1,43 @@
+@import "./_pc.scss";
+
+// @media screen and (max-width: 1440px) {
+//     @import "./pc.scss";
+// }
+@media screen and (min-width: 1440px){
+  .p-office #space .sec-pre .inner .slide-box-pre {
+    width: calc(100% + 52.3rem);
+  }
+}
+
+@media screen and (max-width: 1792px){
+  .p-office #space .sec-pre .inner .slide-box-pre {
+    width: calc(100% + 45.9rem);
+  }
+}
+
+@media screen and (max-width: 1600px){
+  .p-office #space .sec-pre .inner .slide-box-pre {
+    width: calc(100% + 36rem);
+  }
+}
+
+@media screen and (max-width: 1366px){
+  .p-office #space .sec-pre .inner .slide-box-pre {
+    width: calc(100% + 27.8rem);
+  }
+}
+
+@media screen and (max-width: 1280px){
+  .p-office #space .sec-pre .inner .slide-box-pre {
+    width: calc(100% + 27.2rem);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  @import "./_mo.scss";
+
+
+  .p-office #space .sec-pre .inner .slide-box-pre {
+    width: 100%;
+  }
+}

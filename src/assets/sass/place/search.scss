@@ -1,0 +1,15 @@
+
+@import "./pc.scss";
+@import "./pc-main.scss";
+@import "./pc-sub.scss";
+
+
+// @media screen and (max-width: 1440px) {
+//     @import "./pc.scss";
+// }
+
+@media screen and (max-width: 768px) {
+    @import "./mo.scss";
+    @import "./mo-main.scss";
+    @import "./mo-sub.scss";
+}

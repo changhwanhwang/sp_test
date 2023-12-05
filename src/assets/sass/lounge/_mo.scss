@@ -1,0 +1,464 @@
+.p-lounge {
+  background-color: #fff;
+  section:not(.sec-kv, .sec-benefit, .sec-question-dd, .sec-checkin, .sec-contract, .sec-shop-link) {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+
+  .content {
+    padding: 12rem 2rem;
+  }
+  // 공통 inner
+  .sec {
+    &-space,
+    &-service,
+    &-review,
+    &-membership {
+      .inner {
+        max-width: 33.5rem;
+      }
+    }
+  }
+
+  // 공통타이틀
+  [class*="p-title"] {
+    margin-bottom: 4rem;
+    font-size: 3rem;
+  }
+  .p-title-center {
+    font-size: 2rem;
+  }
+  // 공통 섹션 마진
+  section:not(.sec-kv, .sec-service, .sec-question-dd, .sec-checkin, .sec-contract) {
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+  }
+  section {
+    &.sec-picture {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    &.sec-review {
+      margin-bottom: 0;
+    }
+    &.sec-images-slider {
+      padding-top: 4rem;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    &.sec-space {
+      margin-top: 9.5rem;
+    }
+    &.sec-question {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    &.sec-shop-link {
+      margin-top: 0;
+      margin-bottom: 12rem;
+    }
+  }
+
+  .sec-kv {
+    .keyvisual-title {
+      width: 100%;
+      top: 9.4rem;
+      .sub-title {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        font-weight: 500;
+      }
+      .main-title {
+        font-size: 4.5rem;
+        line-height: 5.2rem;
+        font-weight: 600;
+      }
+    }
+    .keycisual-swiper {
+      width: 100%;
+      height: 52.9rem;
+    }
+  }
+
+  .main-title {
+    margin-bottom: 12rem;
+    font-size: 3.4rem;
+    line-height: 4.8rem;
+  }
+
+  .txt-box {
+    margin-bottom: 4rem;
+  }
+
+  .sub-title {
+    font-size: 2.8rem;
+    line-height: 4rem;
+    letter-spacing: -0.03rem;
+  }
+
+  .sub-txt {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+
+  .swiper-box {
+    position: relative;
+    width: 35.5rem;
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 2rem;
+      height: 2rem;
+      background-color: #fff;
+      z-index: 3;
+    }
+    &-average {
+      max-width: 29.6rem;
+      &.swiper-box {
+        .swiper-horizontal > .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+          right: 0;
+        }
+      }
+    }
+    .swiper-wrapper {
+      padding-bottom: 0;
+    }
+    .swiper-button-box {
+      display: none;
+    }
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+      left: auto;
+      right: 2rem;
+      bottom: 0;
+      width: auto;
+      padding: 0.4rem 0;
+      background-color: #fff;
+      z-index: 5;
+    }
+    .swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+    .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+      left: auto;
+      bottom: 0;
+      right: 1.6rem;
+      height: 1.6rem;
+      transform: translate(0);
+      transform: scale(1);
+      z-index: 5;
+      &::before {
+        content: "";
+        position: absolute;
+        right: -1.6rem;
+        bottom: 0;
+        width: 120%;
+        height: 100%;
+        background-color: #fff;
+      }
+    }
+    .swiper-pagination-bullet {
+      width: 0.6rem;
+      height: 0.6rem;
+      opacity: 0.1;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: #000;
+      opacity: 1;
+    }
+    .img {
+      &-tag {
+        right: 2rem;
+        top: 2rem;
+      }
+      &-name {
+        margin-top: 1.6rem;
+        font-size: 1.5rem;
+        line-height: 1;
+      }
+    }
+  }
+
+  .option {
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 6rem;
+      margin-bottom: 4rem;
+      .img-box {
+        margin-bottom: 2rem;
+      }
+      .txt-box {
+        margin-bottom: 0;
+      }
+    }
+    &-item {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 50%;
+      margin-bottom: 6rem;
+      &.bottom {
+        margin-bottom: 0;
+      }
+    }
+    &-title {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      line-height: normal;
+    }
+  }
+
+  .sec-contract {
+    .video-box {
+      width: 35.5rem;
+      height: 26.625rem;
+    }
+    #volume-control {
+      bottom: 2rem;
+      right: 2rem;
+      gap: 2rem;
+      .btn-muted-off,
+      .btn-muted-on {
+        width: 3.4rem;
+        height: 3.4rem;
+      }
+    }
+  }
+
+  .sec-checkin {
+    padding: 12rem 2rem 0;
+    .txt-box {
+      margin-bottom: 4rem;
+    }
+    .img-box {
+      width: 100%;
+    }
+    // .video-box {
+    //   width: 100%;
+    //   height: 50.6441rem;
+    // }
+  }
+
+  // sec-region
+  .sec-shop-link {
+    .shop-wrap {
+      .shop-box {
+        .shop-item-title {
+          padding: 2.4rem 0;
+          font-size: 1.5rem;
+          &.icon-arrow::before {
+            top: 2.3rem;
+            right: 0.5rem;
+          }
+        }
+        .link-box {
+          flex-direction: column;
+          flex-wrap: nowrap;
+          .shop-link {
+            width: 100%;
+            &.icon-arrow-right::before {
+              top: 4rem;
+              right: 0.5rem;
+            }
+            &:nth-child(odd) {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // membership
+  .membership-bg {
+    margin: 0 -2rem;
+    background-color: #000;
+    padding: 12rem 0;
+  }
+  .sec-membership {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    .sub-title {
+      color: #fff;
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 4rem;
+    }
+    .membership-list {
+      flex-direction: column;
+      .membership-item {
+        width: 100%;
+        margin-bottom: 1.6rem;
+        &:nth-child(1) {
+          margin-bottom: 1.6rem;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .top-text {
+          .mem-type {
+            font-size: 1.6rem;
+            font-weight: 700;
+          }
+          .mem-area {
+            font-size: 2.4rem;
+            font-weight: 700;
+          }
+          .mem-choice {
+            font-size: 1.4rem;
+            margin-bottom: 3.2rem;
+          }
+        }
+        .bottom-text {
+          height: 12.5rem;
+          .mem-price {
+            font-size: 1.8rem;
+          }
+          .mem-desc {
+            font-size: 1.3rem;
+            margin-bottom: 3.2rem;
+          }
+          .mem-start-btn {
+            position: unset;
+            padding: 1.6rem 0;
+            width: 100%;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+
+
+  .sec-review {
+    .inner {
+      .p-title {
+        font-size: 3rem;
+        line-height: 4.2rem;
+        color: #000;
+      }
+      .review-list {
+        margin-top: 4rem;
+        column-count: 1;
+        .review-item {
+          width: 100%;
+          color: #000;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          // &:nth-child(n + 6) {
+          //   display: none;
+          // }
+          .text-box {
+            .review-title {
+              font-size: 1.7rem;
+              line-height: 3rem;
+              margin-bottom: 0;
+            }
+            .review-text {
+              font-size: 1.5rem;
+              line-height: 3rem;
+              letter-spacing: -0.015rem;
+              color: #616161;
+            }
+          }
+        }
+        .item-img {
+          padding-bottom: 2rem;
+          &::before {
+            width: 0;
+          }
+        }
+      }
+      .btn-more {
+        width: 100%;
+        padding-right: 2.7rem;
+        color: #222;
+        &.is-open::before {
+          top: 2.4rem;
+          right: 14.5rem;
+          transform: rotate(45deg);
+        }
+      }
+    }
+    .btn-more {
+      width: 100%;
+      padding-right: 2.7rem;
+    }
+  }
+
+  // picture
+  .sec-picture {
+    .p-title-center {
+      text-align: left;
+      margin-left: 2rem;
+      font-size: 2.8rem;
+    }
+    .picture-box {
+      margin-top: 0rem;
+      width: 100%;
+      height: auto;
+      display: block;
+      .slide-box {
+        width: 100%;
+        height: 100%;
+        .swiper-slide {
+          width: 100%;
+          height: 100%;
+        }
+        .swiper-pagination {
+          bottom: 2.48rem;
+        }
+      }
+      .img-wrap {
+        width: 100%;
+        overflow: hidden;
+        .img-box {
+          width: 50%;
+          height: 13.7rem;
+        }
+      }
+    }
+  }
+
+  // 자주묻는질문
+  .sec-question-dd {
+    width: 100%;
+    padding: 12rem 2rem;
+    .title-box {
+      margin-bottom: 4rem;
+    }
+    .question-drop-down {
+      .question {
+        &-title {
+          padding: 2.4rem 0;
+          font-size: 1.5rem;
+          line-height: 2.4rem;
+          font-weight: 700;
+          &.icon-arrow::before {
+            right: 0.5rem;
+          }
+        }
+        &-txt {
+          line-height: 3rem;
+        }
+      }
+    }
+  }
+
+  .scroll-button-box {
+    .btn-membership {
+      right: 2rem;
+      bottom: 2rem;
+      width: 6.4rem;
+      height: 6.4rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  }
+}
